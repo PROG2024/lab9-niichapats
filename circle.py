@@ -1,4 +1,6 @@
 from __future__ import annotations
+
+import doctest
 import math
 
 
@@ -52,3 +54,7 @@ class Circle:
         return f"Circle({self.radius})"
     
     __repr__ = __str__
+
+
+if __name__ == '__main__':
+    doctest.testmod(verbose=True)
